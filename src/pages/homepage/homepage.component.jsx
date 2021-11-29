@@ -1,6 +1,6 @@
 import React from 'react';
 import './homepage.styles.scss';
-import CardContainer from '../card-container/card-container.component';
+import CardContainer from '../../components/card-container/card-container.component';
 
 const homepageCards = [
 	{ title: 'HATS', subtitle: 'Many hats' },
