@@ -1,17 +1,19 @@
 import React from 'react';
-import { ProductCard } from '../product-card/product-card.component';
 import './homepage.styles.scss';
+import CardContainer from '../card-container/card-container.component';
 
-export const HomePage = () => {
+const homepageCards = [
+	{ title: 'HATS', subtitle: 'Many hats' },
+	{ title: 'SHOES', subtitle: 'Many shoes' },
+	{ title: 'SHIRTS', subtitle: 'Many shirts' },
+	{ title: 'PANTS', subtitle: 'Many pants' },
+	{ title: 'SOCKS', subtitle: 'Many socks' },
+];
+
+export default function HomePage() {
 	return (
 		<div className='homepage'>
-			<div className='card-container'>
-				<ProductCard title='HATS' subtitle='Many hats' />
-				<ProductCard title='SHOES' subtitle='Many shoes' />
-				<ProductCard title='SHIRTS' subtitle='Many shirts' />
-				<ProductCard title='PANTS' subtitle='Many pants' />
-				<ProductCard title='SOCKS' subtitle='Many socks' />
-			</div>
+			<CardContainer cards={homepageCards} />
 		</div>
 	);
-};
+}

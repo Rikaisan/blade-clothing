@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const ProductCard = ({ title, subtitle }) => {
+export default function ProductCard({ title, subtitle }) {
 	return (
 		<div className='product-card'>
 			<div className='info-holder'>
@@ -9,4 +9,4 @@ export const ProductCard = ({ title, subtitle }) => {
 			</div>
 		</div>
 	);
-};
+}
