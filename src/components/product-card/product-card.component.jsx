@@ -1,4 +1,5 @@
 import React from 'react';
+import './product-card.styles.scss';
 
 export default function ProductCard({ title, subtitle }) {
 	return (
